@@ -1,42 +1,44 @@
-AWS Services Used
-AWS Elastic Beanstalk
-Amazon RDS (MySQL)
-Amazon ElastiCache (Memcached)
-Amazon MQ (RabbitMQ)
-Application Load Balancer (ALB)
-Amazon Route53
-AWS Certificate Manager (ACM)
-Amazon S3
-IAM Roles & Policies
-CloudWatch Monitoring
-🧠 Cloud Migration Strategy
-
 This project focuses on:
 
-Re-Architecture
+* Re-Architecture
 
 Redesigning portions of the application architecture to better align with cloud-native services and scalability patterns.
 
-Re-Factor
+* Re-Factor
 
 Modernizing components of the application and infrastructure to leverage managed AWS services while reducing operational overhead.
+
+
+AWS Services Used
+* AWS Elastic Beanstalk
+* Amazon RDS (MySQL)
+* Amazon ElastiCache (Memcached)
+* Amazon MQ (RabbitMQ)
+* Application Load Balancer (ALB)
+* Amazon Route53
+* AWS Certificate Manager (ACM)
+* Amazon S3
+* IAM Roles & Policies
+* CloudWatch Monitoring
+* 
+🧠 Cloud Migration Strategy
 
  Project Objectives
 
 
-Reduce infrastructure management overhead
+* Reduce infrastructure management overhead
 
 
-Improve scalability and high availability
+* Improve scalability and high availability
 
 
-Migrate backend services to managed AWS offerings
+* Migrate backend services to managed AWS offerings
 
 
-Improve deployment consistency and reliability
+* Improve deployment consistency and reliability
 
 
-Modernize application architecture using cloud-native services
+* Modernize application architecture using cloud-native services
 
 
 
@@ -44,38 +46,38 @@ Modernize application architecture using cloud-native services
 Before Modernization
 
 
-Manually managed EC2 infrastructure
+* Manually managed EC2 infrastructure
 
 
-Self-hosted database and messaging services
+* Self-hosted database and messaging services
 
 
-High operational overhead
+* High operational overhead
 
 
-Limited scalability
+* Limited scalability
 
 
 
 After Modernization
 
 
-Managed application hosting with Elastic Beanstalk
+* Managed application hosting with Elastic Beanstalk
 
 
-Managed database using Amazon RDS
+* Managed database using Amazon RDS
 
 
-Managed caching using ElastiCache
+* Managed caching using ElastiCache
 
 
-Managed messaging using Amazon MQ
+* Managed messaging using Amazon MQ
 
 
-Improved scalability and fault tolerance
+* Improved scalability and fault tolerance
 
 
-Simplified operational management
+* Simplified operational management
 
 
 
@@ -83,59 +85,59 @@ Simplified operational management
 Frontend Layer
 
 
-Route53 DNS routing
+* Route53 DNS routing
 
 
-HTTPS via ACM
+* HTTPS via ACM
 
 
-Application Load Balancer
+* Application Load Balancer
 
 
 
 Application Layer
 
 
-Java application deployed to Elastic Beanstalk
+* Java application deployed to Elastic Beanstalk
 
 
-Apache Tomcat platform
+* Apache Tomcat platform
 
 
-Auto scaling and health monitoring handled by AWS
+* Auto scaling and health monitoring handled by AWS
 
 
 
 Backend Layer
-Amazon RDS
-Managed relational database service hosting MySQL database
-Amazon ElastiCache
-Managed Memcached cluster for application caching
-Amazon MQ
-Managed RabbitMQ service for messaging and asynchronous communication
+* Amazon RDS
+* Managed relational database service hosting MySQL database
+* Amazon ElastiCache
+* Managed Memcached cluster for application caching
+* Amazon MQ
+* Managed RabbitMQ service for messaging and asynchronous communication
 
 🔁 Deployment Workflow
 
 
-Build Java application using Maven
+* Build Java application using Maven
 
 
-Package application artifact (.war)
+* Package application artifact (.war)
 
 
-Upload application version to Elastic Beanstalk
+* Upload application version to Elastic Beanstalk
 
 
-Deploy application environment
+* Deploy application environment
 
 
-Configure Route53 DNS
+* Configure Route53 DNS
 
 
-Enable HTTPS using ACM
+* Enable HTTPS using ACM
 
 
-Validate health and connectivity
+* Validate health and connectivity
 
 
 
@@ -160,52 +162,10 @@ Maven
 Git
 
 
-Basic understanding of:
-
-
-AWS networking
-
-
-Elastic Beanstalk
-
-
-Route53
-
-
-Load Balancers
-
-
-
-
-
-🚀 How to Run
-1. Clone Repository
-git clone https://github.com/tcollins520/re-Arch_re-Factor_AWS_PAAS_SAAS.gitcd re-Arch_re-Factor_AWS_PAAS_SAAS
-
-2. Build Application
-mvn clean package
-
-3. Deploy to Elastic Beanstalk
-
-
-Create Elastic Beanstalk environment
-
-
-Upload generated WAR file
-
-
-Configure environment variables
-
-
-Connect backend managed services
-
-
 
 🌐 Access the Application
 After deployment:
-http://<elastic-beanstalk-url>
-Or via custom Route53 domain:
-http://your-domain.com
+https://vprobean.tcapp.xyz/
 
 🔐 Security Features
 
@@ -374,4 +334,3 @@ Enterprise cloud architecture
 Real-world DevOps workflows
 
 
-Ideal for Cloud Engineer and DevOps Engineer portfolios 🚀
